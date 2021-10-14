@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salsa Valentina Valentine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(
+          44.8deg,
+          rgba(255, 136, 102, 0.67) -53.1%,
+          rgba(255, 221, 136, 0.28) 49%
+        );
+        min-height: 100vh;
+      }
+      h1 {
+        text-align: center;
+        color: #e94822;
+        font-size: 35px;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.125rem;
+      }
+      h2 {
+        text-align: center;
+        color: #2c2d34;
+        border: 2px solid #e94822;
+        padding: 15px;
+        font-size: 22px;
+        border-radius: 4px;
+        font-family: 'Raleway', sans-serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        width: 80%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+        font-family: 'Open Sans', sans-serif;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #e94822;
+        color: #feffdf;
+        font-size: 16px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      span.green {
+        color: green;
+      }
+      span.white {
+        color: #a96851;
+      }
+      span.red {
+        color: red;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .learn-more {
+        color: #e94822;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Salsa Valentina!
+      </h1>
+      <h2>
+        Especially the yellow one 😉
+      </h2>
+      <img
+        src="https://www.salsavalentina.com/images/Valentina-370.png"
+        alt="Salsa Valentina"
+      />
+
+      <p>
+        Salsa Valentina, a sauce with <strong>mexican</strong> origins. Made
+        with puya chilis from <span class="green">Ja</span
+        ><span class="white">lis</span><span class="red">co</span> state,
+        similar to the Guajillo chili and known by the name
+        <em>guajillo puya.</em>
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Valentina_(hot_sauce)"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia 🤓
+      </a>
+      <button>
+        Choose a Valentina
+      </button>
+      <br />
+      <hr />
+      <p class="footer">
+        This page was built by Ingrid Lopez
+      </p>
+    </div>
+    <script>
+      function choose () {
+        let name = prompt('What is your name?')
+        let team = prompt('Are you team mild or team hot sauce?')
+
+        if (team === 'mild') {
+          alert('Thank you ' + name + '! Your Salsa Valentina is Yellow Label!')
+        } else {
+          alert('Thank you ' + name + '! Your Salsa Valentina is Black Label!')
+        }
+      }
+
+      let button = document.querySelector('button')
+      button.addEventListener('click', choose)
+    </script>
+  </body>
+</html>
